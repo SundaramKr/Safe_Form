@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="google-site-verification" content="IZRYFPXMOEfDWF3ogGBx5AJ4CmTA1NM4VArokT3skwY" />
+
+  <title>Safe Form</title>
+  <meta name="description" content="Safe Form is a platform to prevent cheating in Google Forms by securing it with tab change detection.">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--<body style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">-->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span><strong>Safe Form</strong></span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="aboutus.html">About Me</a></li>
+          <li class="dropdown"><a href="#"><span>Contact</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="contact.html">Contact Form</a></li>
+              <li><a href="feedback.html">Feedback Form</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    
+    <section class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>How Safe Form Works</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-pink">
+              <div class="icon"><i class="bi-dice-1"></i></div>
+              <h4 class="title">Step 1</h4>
+              <p class="description">Enter your name in the column below and press submit. You will be rediected to your designated Google Form.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+              <div class="icon"><i class="bi-dice-2"></i></div>
+              <h4 class="title">Step 2</h4>
+              <p class="description">Once on this page,  don't press reload or go back since autosave is off and in doing so, you will lose all your progress.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bi-dice-3"></i></div>
+              <h4 class="title">Step 3</h4>
+              <p class="description">While filling the form, if you open another tab or deviate from the form, you will be warned. The warn limit on the form is 3.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><i class="bi-dice-4"></i></div>
+              <h4 class="title">Step 4</h4>
+              <p class="description">If the number of warns increases more than 3, your session will be terminated and since autosave is off, all your progress will be lost.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <hr>
+    <!-- ======= Features Section ======= -->
+    <section class="features">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Enter your Name Below to Start</h2>
+          <p>(This is a Sample)</p>
+          <input id="userinput" required>
+          <br><br>
+          <button onclick="input()">Submit</button>
+        </div>
+      </div>
+    </section><!-- End Features Section -->
+    <hr>
+
+    <!-- ======= Features Section ======= -->
+    <section class="features">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Features</h2>
+          <p>Given below are the perks or features our site offers to strengthen the security of quizes held via Google Forms.</p>
+        </div>
+        <br>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="assets/img/anticheat.gif" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="col-md-7 pt-4">
+            <h3><strong>Anti Cheat Technology for Google Forms</strong></h3>
+            <ul>
+              <li><i class="bi bi-check"></i> After crossing 3 warns, the session termination screen rolls in.</li>
+              <li><i class="bi bi-check"></i> This can also happen if the navbar timer hits 00:00.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/timedgoogleforms.gif" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <h3><strong>Timed Google Forms for better exams and quizes</strong></h3>
+            <ul>
+              <li><i class="bi bi-check"></i> The default time for the forms are 15 minutes.</li>
+              <li><i class="bi bi-check"></i> This time can be customized based on the teacher's needs.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="assets/img/instructions.gif" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="col-md-7 pt-5">
+            <h3><strong>Custom Instructions for Students</strong></h3>
+            <ul>
+              <li><i class="bi bi-check"></i> These instructions are meant to guide students during the test.</li>
+              <li><i class="bi bi-check"></i> If the test has different sections, it informs the student how to go about them.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/fullscreen.gif" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <h3><strong>A Full Screen Viewing Experience for the students</strong></h3>
+            <ul>
+              <li><i class="bi bi-check"></i> Once on the form, students will be needed to answer the test in Full-Screen.</li>
+              <li><i class="bi bi-check"></i> The Full-Screen Mode is forced as it prevents students from getting distracted.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="assets/img/warns.gif" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="col-md-7 pt-5">
+            <h3><strong>Warning Students if they try to cheat</strong></h3>
+            <ul>
+              <li><i class="bi bi-check"></i> The total number of warnings a student is allowed is 3.</li>
+              <li><i class="bi bi-check"></i> Warns are there to give the students a chance to improve their habit of cheating.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/sessiontermination.gif" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <h3><strong>Session Termination on crossing the warns</strong></h3>
+            <ul>
+              <li><i class="bi bi-check"></i> Even after 3 warns if the student continues cheating, his session will be terminated.</li>
+              <li><i class="bi bi-check"></i> After a session is terminated, the student can't refill the form even if he reloads or tries to go back.</li>
+              <li><i class="bi bi-check"></i> If the student decides to fill in the form from another device, he'll lose all his progress since auto-save is disabled.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="assets/img/disablejs.gif" class="img-fluid" alt=""  loading="lazy">
+          </div>
+          <div class="col-md-7 pt-5">
+            <h3><strong>Disabling JavaScript won't work</strong></h3>
+            <ul>
+              <li><i class="bi bi-check"></i> This is for all the geeky students who watch too much tips & tricks videos on how to cheat in tests.</li>
+              <li><i class="bi bi-check"></i> Even if a student disables JS for the website, they won't be able to attempt the test.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+  </main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="feedback.html">Feed-back</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html"><strong>Contact Form</strong></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="mailto:sundaramk25000@gmail.com"><strong>Direct Mail</strong></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.instagram.com/w41k3r_25000/"><strong>Instagram</strong></a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Safe Form</h3>
+            <p>Safe Form is a platform to prevent cheating in Google Forms by securing it with tab change detection and terminating the user's session once he crosses the click off limit.</p>
+            <div class="social-links mt-3">
+              <a href="mailto:sundaramk25000@gmail.com" target="_blank" class="mail"><i class="bx bxl-google"></i></a>
+              <a href="https://www.instagram.com/w41k3r_25000/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Sundaram Kumar</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="script2.js"></script>
+
+</body>
+
+</html>
