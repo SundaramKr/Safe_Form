@@ -1,5 +1,6 @@
-# Safe_Form
+# Safe Form
 The site link --> https://safeform.tk/
+# What Safe Form Does
 - Safe Form is a platform to prevent cheating in Google Forms by securing it with tab change detection and terminating the student's session once he/she crosses the click off limit.
 - It contains a built-in timer which terminates the form as soon the student exceeds the allotted time.
 - Once on the form, the student will be presented with an instructions page (which can be customised by the teacher) in order to go about different sections of the test.
