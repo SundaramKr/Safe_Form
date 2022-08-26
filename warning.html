@@ -29,7 +29,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="btnclick()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center ">
@@ -65,6 +65,15 @@
           <p>Dear User, You have either clicked off the form for more than 3 times or the timer hit 00:00. Due to this your session has been terminated.</p>
         </div>
       </div>
+    </section>
+    <section style="display:none">
+      <form action="POST" data-netlify="true">
+        <div class="input-group">
+          <input type="text" id="name" name="name" required>
+          <label for="name"><i class="fa fa-user"></i> Your Name</label>
+        </div>
+        <button id="submitbtn" type="submit"><i class="fa fa-paper-plane"></i> SUBMIT</button>
+    </form>
     </section>
   </main><!-- End #main -->
 
@@ -128,6 +137,12 @@
   <script>
     const flag=1;
     sessionStorage.setItem("FLAG", flag);
+
+    function btnclick()
+    {
+      document.getElementById('name').value = sessionStorage.getItem('NAME');
+      document.getElementById('submitbtn').click();
+    }
   </script>
 
 </body>
